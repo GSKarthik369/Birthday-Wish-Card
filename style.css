@@ -144,3 +144,58 @@
     margin-top: 0 !important;
     font-weight: 900;
 }
+
+.gift {
+    display: flex;
+}
+
+.cake {
+    img {
+        width: 355px;
+        position: absolute;
+        left: 155px;
+        bottom: -55px;
+    }
+}
+
+.box {
+    img {
+        width: 13rem;
+        height: 13rem;
+        position: absolute;
+        bottom: -13px;
+        left: 282px;
+    }
+}
+
+#poppers-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .popper {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff4081;
+    border-radius: 50%;
+    opacity: 0;
+    animation: popper-animation 4s linear infinite;
+  }
+  
+  @keyframes popper-animation {
+    0% {
+      transform: translateY(100vh) scale(0.5);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh) scale(1);
+      opacity: 0;
+    }
+  }
+  
